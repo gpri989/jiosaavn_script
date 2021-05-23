@@ -6,7 +6,7 @@ from colorama import Fore
 import os
 
 def main():
-    print(Fore.GREEN + "\nJioSaavn Music Download Script by prigup")
+    print(Fore.GREEN + "\nJioSaavn Music Download Script by Priyanshu(@gpri989)")
     print("\nCredits to https://github.com/sumitkolhe for JioSaavn API")
     options = int(input("\n Enter 0 To Exit\n\n 1. With Song Name\n 2. With Song URL\n 3. With Album ID \n 4. With Album URL\n => "))
     if options == 0:
