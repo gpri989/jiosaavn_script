@@ -12,6 +12,27 @@
 
 ![Preview](https://user-images.githubusercontent.com/48028932/119275420-98084e80-bc32-11eb-8e5a-59516c35d93c.PNG)
 
+#### Pre-installation
+  
+1. You need a terminal to run this script
+  
+     So Download [Tarmux](https://play.google.com/store/apps/details?id=com.termux)
+  
+  
+2. Open Tarmux and run this 2 cmds to install git & python
+  
+     ```
+        pkg install git
+     ```
+  
+     ```
+        pkg install python
+     ```
+  
+   Follow the inline commands 
+  
+   After successfully install your teminal is ready run this script
+  
 #### How to run this script
   
 1.Clone this repo
@@ -19,7 +40,7 @@
   git clone https://github.com/AjujOT/jiosaavn_script
   ```
 
-  2. Go to this directory
+ 2. Go to this directory
   ```
   cd jiosaavn_script
   ```
