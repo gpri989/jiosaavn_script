@@ -13,53 +13,46 @@
 ![Preview](https://user-images.githubusercontent.com/48028932/119275420-98084e80-bc32-11eb-8e5a-59516c35d93c.PNG)
 
 #### Pre-installation
-
+  
 1. You need a terminal to run this script
-
-   So Download [Termux](https://play.google.com/store/apps/details?id=com.termux)
-
-2. Open Termux and run this 2 cmds to install git & python
-
-   ```
-      pkg install git
-   ```
-
-   ```
-      pkg install python
-   ```
-
-   Follow the inline commands
-
+  
+     So Download [Tarmux](https://play.google.com/store/apps/details?id=com.termux)
+  
+  
+2. Open Tarmux and run this 2 cmds to install git & python
+  
+     ```
+        pkg install git
+     ```
+  
+     ```
+        pkg install python
+     ```
+  
+   Follow the inline commands 
+  
    After successfully install your teminal is ready run this script
-
+  
 #### How to run this script
-
+  
 1.Clone this repo
+  ```
+  git clone https://github.com/AjujOT/jiosaavn_script
+  ```
 
-```
-git clone https://github.com/AjujOT/jiosaavn_script
-```
-
-2.  Go to this directory
-
-```
-cd jiosaavn_script
-```
-
+ 2. Go to this directory
+  ```
+  cd jiosaavn_script
+  ```
 3.Install requirenets by running this cmd
-
-```
-pip3 install -r requirements.txt
-```
-
+  ```
+  pip3 install -r requirements.txt
+  ```
 4.And finally run the script
-
-```
-python3 main.py
-```
-
-That's it now you can download your favorite music from JioSaavn
-
+  ```
+  python3 main.py
+  ```
+  That's it now you can download your favorite music from JioSaavn
+  
 #### Credits
-
 1. [sumitkolhe](https://github.com/sumitkolhe) [For JioSaavnAPI]

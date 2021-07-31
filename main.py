@@ -1,4 +1,6 @@
 import requests
+import subprocess
+import sys
 import wget
 from colorama import Fore
 import os
@@ -19,19 +21,6 @@ def main():
         download("album URL", "album?link", 4)
     else:
         print("\nEnter Valid Option\n")
-def qchoice():
-    qchoice = int(input("\nQuality of Song\n 1. Low \n 2. Medium \n 3. High \n => "))
-    if qchoice  == 1:
-        n = 0
-    elif qchoice  == 2:
-        n = 1
-    elif qchoice  == 3:
-        n = 2
-    else:
-        print("\nEnter Valid Option!!\n")
-        print("Exiting..\n")
-        exit()
-    return n
 def download(type1: str, type2: str, i: int):
         song_name = input("\nEnter the" +  " " + type1 + " " + ":\n => ")
         print(f"\nSearching for {song_name}\n")
@@ -50,7 +39,18 @@ def download(type1: str, type2: str, i: int):
                 try:
                     choice = int(input("\nEnter the index of the song which you want to download:\n => "))
                     song_link = songs[choice-1]
-                    limnk = song_link[qchoice()]
+                    qchoice = int(input("\nQuality of Song\n 1. Low \n 2. Medium \n 3. High \n => "))
+                    if qchoice  == 1:
+                        n = 0
+                    elif qchoice  == 2:
+                        n = 1
+                    elif qchoice  == 3:
+                        n = 2
+                    else:
+                        print("\nEnter Valid Option!!\n")
+                        print("Exiting..\n")
+                        exit()
+                    limnk = song_link[n]
                     print("\nDownloading :" + " " + final[choice-1] + "\n")
                     download = wget.download(limnk)
                     print("\n")    
@@ -65,7 +65,14 @@ def download(type1: str, type2: str, i: int):
             print("\n Found :" + " " + song_results['song_name'] + " " + "==>" + " " + song_results['song_artist'] + "\n")
             song_link = song_results['download_links']
             try:
-                limnk = song_link[qchoice()]
+                qchoice = int(input("\nQuality of Song\n 1. Low \n 2. Medium \n 3. High \n => "))
+                if qchoice  == 1:
+                    n = 0
+                elif qchoice  == 2:
+                    n = 1
+                elif qchoice  == 3:
+                    n = 2
+                limnk = song_link[n]
                 print("\nDownloading....\n")
                 download = wget.download(limnk)
                 final_song = (song_results['song_name'] + " " + "By" + " " + song_results['song_artist'])
@@ -85,7 +92,14 @@ def download(type1: str, type2: str, i: int):
                 try:
                     choice = int(input("\nEnter the index of the song which you want to download:\n => "))
                     song_link = songs[choice-1]
-                    limnk = song_link[qchoice()]
+                    qchoice = int(input("\nQuality of Song\n 1. Low \n 2. Medium \n 3. High \n => "))
+                    if qchoice  == 1:
+                        n = 0
+                    elif qchoice  == 2:
+                        n = 1
+                    elif qchoice  == 3:
+                        n = 2
+                    limnk = song_link[n]
                     print("\nDownloading :" + " " + final[choice-1] + "\n")
                     download = wget.download(limnk)
                     print("\n")    
